@@ -1,0 +1,168 @@
+:root {
+  --contact-h1-size: 30px;
+  --contact-h1-letter-spacing: 3px;
+  --contact-h1-line-height: 40px;
+  --contact-p1-size: 25px;
+  --contact-p1-letter-spacing: 3px;
+  --contact-p1-line-height: 35px;
+  --contact-p-size: 20px;
+  --contact-p-letter-spacing: 3px;
+  --contact-p-line-height: 30px;
+  --image-height: 500px;
+  --image--width: 500px;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px 0px 0px 0px;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.contact>.intro-text-circle1, .contact>.intro-text-circle2, .contact>.intro-text-circle3, .contact>.intro-text-circle4 {
+  background-image: radial-gradient(transparent 40%, rgb(20, 20, 20) 40%, rgb(7, 7, 7) 60%, rgb(20, 20, 20) 70%);
+  z-index: -1;
+}
+
+.contact-text {
+  align-self: center;
+  height: 100%;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 450px;
+  min-width: 40px;
+  margin: 25px;
+}
+
+.contact-text>h1 {
+  color: rgb(196, 196, 196);
+  font-size: var(--contact-h1-size);
+  letter-spacing: var(--contact-h1-letter-spacing);
+  margin: 0px 30px 0px 60px;
+  max-width: 400px;
+  line-height: var(--contact-h1-line-height);
+}
+
+.contact-text>p1 {
+  color: rgb(96, 96, 96);
+  font-size: var(--contact-p1-size);
+  margin: 50px 0px 0px 60px;
+  letter-spacing: var(--contact-p1-letter-spacing);
+  line-height: var(--contact-p1-line-height);
+}
+
+.contact-text>p {
+  color: rgb(163, 163, 163);
+  margin: 10px 0px 0px 60px;
+  font-size: var(--contact-p-size);
+  line-height: var(--contact-p-line-height);
+  letter-spacing: var(--contact-p-letter-spacing);
+}
+
+.contact-image-box {
+  height: var(--image-height);
+  width: var(--image--width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image {  
+  background-image: url('../images/6S5A8705.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  flex: 1;
+  filter:brightness(0.8);
+  margin: 25px;
+  border-radius: 20px;
+  transition: all 0.1s;
+  z-index: 0;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective-origin: 100% 50%;
+}
+
+/* .contact-image-layer {
+  background-image: url('../images/IMG_7173_1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateZ(100px);
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  flex: 1;
+  border-radius: 20px;
+  transition: all 0.1s;
+  z-index: 1;
+  opacity: 1;
+} */
+
+.contact-image>img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+  :root {
+    --contact-h1-size: 25px;
+    --contact-h1-letter-spacing: 2px;
+    --contact-h1-line-height: 35px;
+    --contact-p1-size: 20px;
+    --contact-p1-letter-spacing: 3px;
+    --contact-p1-line-height: 30px;
+    --contact-p-size: 15px;
+    --contact-p-letter-spacing: 3px;
+    --contact-p-line-height: 25px;
+    --image-height: 400px;
+    --image--width: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --contact-h1-size: 20px;
+    --contact-h1-letter-spacing: 3px;
+    --contact-h1-line-height: 35px;
+    --contact-p1-size: 18px;
+    --contact-p1-letter-spacing: 3px;
+    --contact-p1-line-height: 35px;
+    --contact-p-size: 15px;
+    --contact-p-letter-spacing: 3px;
+    --contact-p-line-height: 30px;
+    --image-height: 300px;
+    --image--width: 300px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  :root {
+    --contact-h1-size: 18px;
+    --contact-h1-letter-spacing: 2px;
+    --contact-h1-line-height: 30px;
+    --contact-p1-size: 16px;
+    --contact-p1-letter-spacing: 2px;
+    --contact-p1-line-height: 35px;
+    --contact-p-size: 13px;
+    --contact-p-letter-spacing: 2px;
+    --contact-p-line-height: 30px;
+    --image-height: 300px;
+    --image--width: 300px;
+  }
+}
